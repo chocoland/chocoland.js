@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0,minimum-scale=1.0">
+	<title>Choco Framework</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/choco.css">
+</head>
+<body>
+	
+
+	<header class="navbar navbar-default nav">
+		<nav>
+			<ul class="inline-list pull-left">
+				<li><label  class="max-bar">Choco Framework</label></li>
+				<li><a class="btn trans min-bar" href="#!/"><img src="icon/home.png" alt="Home"></a></li>
+			</ul>
+			<ul class="inline-list text-right pull-right">
+				<li><button class="btn trans max-bar" id="menu"><img src="icon/menu.png" alt="Menu"></button></li>
+				<li><a class="btn trans min-bar" href="#!/docs"><img src="icon/doc.png" alt="Doc"></a></li>
+				<li><a class="btn trans min-bar" href="#!/download"><img src="icon/download.png" alt="Download"></a></li>
+				<li><a class="btn trans min-bar" href="#!/sky/a/b/c"><img src="icon/audio.png" alt="Audio"></a></li>
+				<li><a class="btn trans min-bar" href="#!/sky/song"><img src="icon/video.png" alt="Video"></a></li>
+			</ul>
+			<ul id="nav" class="hidden inline-list"> 
+				<li><a class="btn trans max-bar" href="#!/"><img src="icon/home.png" alt="Home"></a></li>
+				<li><a class="btn trans max-bar" href="#!/docs"><img src="icon/doc.png" alt="Doc"></a></li>
+				<li><a class="btn trans max-bar" href="#!/download"><img src="icon/download.png" alt="Download"></a></li>
+				<li><a class="btn trans max-bar" href="#!/sky/a/b/c"><img src="icon/audio.png" alt="Audio"></a></li>
+				<li><a class="btn trans max-bar" href="#!/sky/song"><img src="icon/video.png" alt="Video"></a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="view"></div>
+
+	<template id="docs">
+		<main>
+			<h1 class="text-center">Destiny To Routes</h1>
+			<p class="p"> Routes To Destiny is, a library to manipulate the hash of a URL, with definitions of callbacks with a fragment of code in case of the hash change, render the web application content over you, we believe the use of model SPA help to make better web applications and we never use the term web pages Because this is the generation of web applications</p>
+			<table border="1" class="p">
+				<caption>Method and atrubutes</caption>
+					<colgroup>
+						<col/>
+						<col/>
+						<col/>
+					</colgroup>
+
+					<thead>
+						<tr>
+							<th scope="col" colspan="3" class="text-center">Router</th>
+						</tr>
+						<tr>
+							<th scope="col">type</th>
+							<th scope="col">Name</th>
+							<th scope="col">Description</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<th scope="row" rowspan="17">Methods</th>
+							<td>constructor(json)</td>
+							<td>instance the properties</td>
+						</tr>
+						<tr>
+							<td>get(url, callback)</td>
+							<td>add a path with method GET and his callback</td>
+						</tr>
+						<tr>
+							<td>post(url, callback)</td>
+							<td>add a path with method POST and his callback</td>
+						</tr>
+						<tr>
+							<td>put(url, callback)</td>
+							<td>add a path with method PUT and his callback</td>
+						</tr>
+						<tr>
+							<td>delete(url, callback)</td>
+							<td>add a path with method DELETE and his callback</td>
+						</tr>
+						<tr>
+							<td>add(method, url, callback)</td>
+							<td>push a route definition</td>
+						</tr>
+						<tr>
+							<td>onHashChange()</td>
+							<td>this event call the callbacks</td>
+						</tr>
+						<tr>
+							<td>run()</td>
+							<td>the event listener</td>
+						</tr>
+						<tr>
+							<td>debug()</td>
+							<td>enable the log</td>
+						</tr>
+						<tr>
+							<td>log(element, value)</td>
+							<td>show a message in console</td>
+						</tr>
+						<tr>
+							<td>setTime(ms)</td>
+							<td>delay of events</td>
+						</tr>
+						<tr>
+							<td>setStatus(status)</td>
+							<td>status HTTP of petition</td>
+						</tr>
+						<tr>
+							<td>url(url)</td>
+							<td>return URL as array</td>
+						</tr>
+						<tr>
+							<td>noAjax()</td>
+							<td>disable AJAX</td>
+						</tr>
+						<tr>
+							<td>ajax(method, url)</td>
+							<td>AJAX request</td>
+						</tr>
+						<tr>
+							<td>apply(i)</td>
+							<td>call the callback of "i" (a integer)</td>
+						</tr>
+						<tr>
+							<td>check()</td>
+							<td>return the AJAX response</td>
+						</tr>
+
+
+						<tr>
+							<th scope="row" rowspan="8">Properties</th>
+							<td>hash</td>
+							<td>current hash</td>
+						</tr>
+						<tr>
+							<td>routes</td>
+							<td>routes mapping</td>
+						</tr>
+						<tr>
+							<td>isDebug</td>
+							<td>boolean, to debug this class</td>
+						</tr>
+						<tr>
+							<td>ms</td>
+							<td>delay of events</td>
+						</tr>
+						<tr>
+							<td>request</td>
+							<td>the object XMLHttpRequest</td>
+						</tr>
+						<tr>
+							<td>response</td>
+							<td>AJAX response</td>
+						</tr>
+						<tr>
+							<td>status</td>
+							<td>status of AJAX request</td>
+						</tr>
+
+						<tr>
+							<td>sync</td>
+							<td>is AJAX active?</td>
+						</tr>
+					</tbody>
+			</table> 
+			<h1 class="text-center">Template</h1>
+			<p class="p">Template is, a library to manipulate the DOM, through of a JSON parameter save into a object the nodo to manipule and through of callbacks, with the power of the template tag</p>
+			<table border="1" class="p">
+				<caption>Method and atrubutes</caption>
+					<colgroup>
+						<col />
+						<col />
+					</colgroup>
+
+					<thead>
+						<tr>
+							<th scope="col" colspan="3" class="text-center">Template</th>
+						</tr>
+						<tr>
+							<th scope="col">type</th>
+							<th scope="col">Name</th>
+							<th scope="col">Description</th>
+						</tr>
+					</thead>
+
+					<tbody>
+
+						<tr>
+							<th scope="row" rowspan="6">Methods</th>
+							<td>constructor(json)</td>
+							<td>set a node through of JSON</td>
+						</tr>
+						<tr>
+							<td>getTemplate()</td>
+							<td>check if the JSON is valid</td>
+						</tr>
+						<tr>
+							<td>setChildId(id)</td>
+							<td>return a child with the id to be modified</td>
+						</tr>
+						<tr>
+							<td>setChildClass(class)</td>
+							<td>return a child with the class to be modified</td>
+						</tr>
+						<tr>
+							<td>setChildTag(tag)</td>
+							<td>return a child with the tag to be modified</td>
+						</tr>
+						<tr>
+							<td>render(selector, callback)</td>
+							<td>set a callback to render the template</td>
+						</tr>
+
+
+						<tr>
+							<th scope="row" rowspan="2">Properties</th>
+							<td>template</td>
+							<td>template mapping</td>
+						</tr>
+						<tr>
+							<td>element</td>
+							<td>the DOM element</td>
+						</tr>
+					</tbody>
+			</table> 
+		</main>
+	</template>
+
+	<template id="home">
+		<main>    
+			<h1 class="text-center">Easy, fast and light framework, to developers in <abbr lang="en" title="single-page application">SPA</abbr></h1>
+			<div class="flex">
+<pre class="item-flex">
+<h3>define a template</h3>
+<label style="color: grey;">&lt!DOCTYPE html&gt</label>
+&lt<label class="text-red">html</label>&gt
+   &lt<label class="text-red">head</label>&gt
+      &lt<label class="text-red">title</label>&gtsame title&lt/<label class="text-red">title</label>&gt
+      &lt<label class="text-red">meta</label> <label class="text-green">charser</label>=<label class="text-yellow">"utf-8"</label>&gt
+   &lt/<label class="text-red">head</label>&gt
+   &lt<label class="text-red">body</label>&gt
+      &lt<label class="text-red">div</label> <label class="text-green">id</label>=<label class="text-yellow">"view"</label>&gt&lt<label class="text-red">/div</label>&gt
+      &lt<label class="text-red">template</label> <label class="text-green">id</label>=<label class="text-yellow">"aID"</label>&gt
+         &lt<label class="text-red">h1</label>&gt&lt/<label class="text-red">h1</label>&gt
+         &lt<label class="text-red">p</label>&gt&lt/<label class="text-red">p</label>&gt
+      &lt/<label class="text-red">template</label>&gt
+      <label style="color: grey;">&lt!-- js area --&gt</label>
+      &lt<label class="text-red">script</label> <label class="text-green">src</label>=<label class="text-yellow">"js/dtr.js"</label>&gt&lt/<label class="text-red">script</label>&gt
+      &lt<label class="text-red">script</label> <label class="text-green">src</label>=<label class="text-yellow">"js/template.js"</label>&gt&lt/<label class="text-red">script</label>&gt
+      &lt<label class="text-red">script</label> <label class="text-green">src</label>=<label class="text-yellow">"js/yourJavaScript.js"</label>&gt&lt/<label class="text-red">script</label>&gt
+   &lt/<label class="text-red">body</label>&gt
+&lt/<label class="text-red">html</label>&gt
+</pre>
+<pre class="item-flex">
+<h3>load the template</h3>
+<label class="text-blue">var</label> template<label class="text-red"> = </label><label class="text-red">new</label> Template({
+   id: <label class="text-yellow">'aID'</label>,
+   child: {
+      tag: [<label class="text-yellow">'h1'</label>, <label class="text-yellow">'p'</label>]
+   }
+});
+</pre>
+<pre class="item-flex">
+<h3>and configure a route</h3>
+<label class="text-blue">var</label> router<label class="text-red"> = </label><label class="text-red">new</label> Router();
+router.get(<label class="text-yellow">'/'</label>, () <label class="text-red">=></label> {
+   template.render(<label class="text-yellow">'#view'</label>, () <label class="text-red">=></label> {
+      template.setChildTag(<label class="text-yellow">'h1'</label>).innerTHML<label class="text-red">=</label><label class="text-yellow">'it is easy'</label>;
+      template.setChildTag(<label class="text-yellow">'p'</label>).innerHTML<label class="text-red">=</label><label class="text-yellow">'and fast'</label>;
+   });
+});
+router.noAjax();
+router.run();
+</pre>
+			</main>
+		</div>
+	</template> 
+
+	<template id="song">
+		<main id="sky">
+			<section id="video" class="flex">
+				<img src="" alt="">
+			</section>
+			<footer id="footer">
+				<audio id="audio" src="" auto>
+					update your <code>browser</code>
+				</audio>
+				<div class="left item">
+					<button class="btn trans" id="play"><img src="icon/play.png" alt="Play"></button>
+					<button class="btn trans" id="down"><img src="icon/down.png" alt="Down volume"></button>
+					<button class="btn trans" id="up"><img src="icon/up.png" alt="Up volume"></button>
+				</div>
+				<div id="time"><div id="now"></div></div>
+			</footer>
+		</main>
+	</template>
+
+	<template id="vid">
+		<main id="sky">
+			<section id="video" class="flex">
+				<video id="audio" src=""></video>
+			</section>
+			<footer id="footer">
+				<div class="left item">
+					<button class="btn trans" id="play"><img src="icon/play.png" alt="Play"></button>
+					<button class="btn trans" id="down"><img src="icon/down.png" alt="Down volume"></button>
+					<button class="btn trans" id="up"><img src="icon/up.png" alt="Up volume"></button>
+				</div>
+				<div id="time"><div id="now"></div></div>
+			</footer>
+		</main>
+	</template>
+
+	<template>
+		<section id="comments">
+			<header>
+				<textarea class="form-control"></textarea>
+			</header>
+			<footer>
+				<div class="comment">
+					<img class="pull-left" src="avatar92.jpg" alt="">
+					<div class="pull-left">
+						<a href="#">Anonimo</a>
+						<p>esto es mi opinion</p>
+					</div>  
+				</div>
+				<div class="comment">
+					<img class="pull-left" src="avatar92.jpg" alt="">
+					<div class="pull-left">
+						<a href="#">Anonimo</a>
+						<p>esto es mi opinion</p>
+					</div>  
+				</div>
+				<div class="comment">
+					<img class="pull-left" src="avatar92.jpg" alt="">
+					<div class="pull-left">
+						<a href="#">Anonimo</a>
+						<p>esto es mi opinion</p>
+					</div>  
+				</div>
+				
+			</footer>
+		</section>
+	</template>
+	<script defer src="js/dtr.js"></script>
+	<script defer src="js/sky.js"></script>
+	<script defer src="js/template.js"></script>
+	<script defer src="js/choco.js"></script>
+	<script defer src="bundle.js"></script>
+</body>
+</html>
