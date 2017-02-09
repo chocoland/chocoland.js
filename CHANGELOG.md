@@ -10,7 +10,7 @@ Format v.p.c
 
 ## Added
 
-* http-serve as default server 
+* http-server as default server 
 
 ## remove
 

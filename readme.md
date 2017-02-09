@@ -8,12 +8,14 @@ Chocoland SPA Framework, join us to this grand project
 git clone https://github.com/chocoland/chocoland.js choco
 cd choco
 npm install -g browserify
+npm install -g http-server
 ```
 
 ## build and run
 
 ```fish
 npm run build
+http-server views
 ```
 
 ## History
