@@ -2,6 +2,20 @@
 
 Chocoland SPA Framework, join us to this grand project
 
+## How to install
+
+```fish
+git clone https://github.com/chocoland/chocoland.js choco
+cd choco
+npm install -g browserify
+```
+
+## build and run
+
+```fish
+npm run build
+```
+
 ## History
 
 For understand the sweet philosophy we must remember we history, today MVC is dead, the API ugly is part of past, Far from bitter lands for ever
