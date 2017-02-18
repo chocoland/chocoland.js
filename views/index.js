@@ -1,6 +1,7 @@
-// index.js
-import {a} from './lib.js';
-import {render} from './js/render.js';
+import * as render from "./js/render.js";
+import * as socket from "./js/websocket.js";
 
-a();
-render("main");
+
+//render.render("main");
+
+socket.send("algo");

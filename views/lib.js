@@ -1,4 +1,0 @@
-// lib.js
-export function a() {
-	console.log("a");
-}

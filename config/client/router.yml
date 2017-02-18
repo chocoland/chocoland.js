@@ -1,0 +1,6 @@
+"#!/":
+    b: 'b'
+docs:
+    url: "#!/docs"
+about:
+    url: "#|/about"

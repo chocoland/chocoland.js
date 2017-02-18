@@ -1,0 +1,6 @@
+main:
+    get: "#!/"
+docs:
+    get: "#!/docs"
+about:
+    all: "#|/about"
